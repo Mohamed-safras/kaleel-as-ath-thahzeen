@@ -23,10 +23,10 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/15 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "2s" }} />
       
       <div className="container mx-auto px-6 relative z-10 flex-1 flex items-center max-w-6xl">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-8 w-full">
           {/* Avatar Section */}
           <div className="relative animate-float flex-shrink-0">
-            <div className="w-48 h-48 md:w-56 md:h-56 relative">
+            <div className="w-56 h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 relative">
               {/* Glow behind avatar */}
               <div className="absolute inset-0 bg-gradient-radial from-primary/40 via-primary/10 to-transparent rounded-full blur-2xl scale-125" />
               
