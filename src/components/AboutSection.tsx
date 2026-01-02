@@ -1,26 +1,26 @@
-import { GraduationCap, Briefcase, Code, Brain } from "lucide-react";
+import { GraduationCap, Briefcase, Code, Award } from "lucide-react";
 
 const AboutSection = () => {
   const highlights = [
     {
       icon: Briefcase,
-      title: "3+ Years Experience",
-      description: "Building high-volume microservices processing millions of transactions",
+      title: "1+ Year Experience",
+      description: "Building backend systems and web applications",
     },
     {
       icon: Code,
-      title: "Full Stack Developer",
-      description: "TypeScript, Java, Python with modern frameworks",
+      title: "Python Developer",
+      description: "Flask, FastAPI, Django specialist",
     },
     {
-      icon: Brain,
-      title: "AI Enthusiast",
-      description: "Integrating cutting-edge AI into scalable systems",
+      icon: Award,
+      title: "PCEP Certified",
+      description: "Python Institute Certified Entry-Level Programmer",
     },
     {
       icon: GraduationCap,
-      title: "BSc in ICT",
-      description: "University of Sri Jayewardenepura, Sri Lanka",
+      title: "BSc. Engineering",
+      description: "Electrical & Electronic Engineering from SEUSL",
     },
   ];
 
@@ -48,11 +48,11 @@ const AboutSection = () => {
 
         <div className="mt-16 max-w-3xl mx-auto text-center">
           <p className="text-muted-foreground leading-relaxed">
-            A Software Engineer with 3 years of hands-on experience building and maintaining 
-            high-volume microservices for platforms processing millions of transactions. 
-            Focused on integrating cutting-edge AI technologies into scalable, high-performing systems. 
-            Skilled in developing intelligent applications, automating workflows, and collaborating 
-            across cross-functional teams to deliver data-driven solutions.
+            Passionate and results-driven Python Developer with over one year of hands-on 
+            experience designing, developing, and optimizing backend systems and web applications. 
+            Skilled in Python frameworks like Flask, FastAPI, and Django, with strong database 
+            expertise in MySQL & BigQuery. Adept at problem-solving and delivering efficient, 
+            maintainable solutions aligned with business objectives.
           </p>
         </div>
       </div>

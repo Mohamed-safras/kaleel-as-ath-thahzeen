@@ -1,8 +1,8 @@
-import { Mail, Github, Linkedin, Globe } from "lucide-react";
+import { Mail, Github, Linkedin, Globe, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   const socialLinks = [
-    { icon: Mail, href: "mailto:awsafras@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:thahzeenas@gmail.com", label: "Email" },
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: Globe, href: "#", label: "Website" },
@@ -25,12 +25,26 @@ const ContactSection = () => {
             Let's connect.
           </p>
 
-          <a
-            href="mailto:awsafras@gmail.com"
-            className="inline-block text-lg font-medium text-foreground hover:text-primary transition-colors mb-12"
-          >
-            awsafras@gmail.com
-          </a>
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <a
+              href="mailto:thahzeenas@gmail.com"
+              className="inline-flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
+            >
+              <Mail size={20} />
+              thahzeenas@gmail.com
+            </a>
+            <a
+              href="tel:+94766805064"
+              className="inline-flex items-center gap-2 text-lg font-medium text-foreground hover:text-primary transition-colors"
+            >
+              <Phone size={20} />
+              +94 766 805 064
+            </a>
+            <p className="inline-flex items-center gap-2 text-muted-foreground">
+              <MapPin size={20} />
+              Kinniya, Sri Lanka
+            </p>
+          </div>
 
           {/* Social links */}
           <div className="flex justify-center gap-4">

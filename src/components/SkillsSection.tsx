@@ -1,16 +1,23 @@
 const skills = [
-  { name: "TypeScript", icon: "📘" },
-  { name: "React", icon: "⚛️" },
-  { name: "Node.js", icon: "💚" },
-  { name: "Java", icon: "☕" },
   { name: "Python", icon: "🐍" },
-  { name: "Spring Boot", icon: "🍃" },
-  { name: "Next.js", icon: "▲" },
-  { name: "Docker", icon: "🐳" },
-  { name: "AWS", icon: "☁️" },
-  { name: "Kafka", icon: "📨" },
+  { name: "Flask", icon: "🌶️" },
+  { name: "FastAPI", icon: "⚡" },
+  { name: "Django", icon: "🎸" },
+  { name: "React", icon: "⚛️" },
+  { name: "MySQL", icon: "🗃️" },
   { name: "MongoDB", icon: "🍃" },
-  { name: "TensorFlow", icon: "🧠" },
+  { name: "BigQuery", icon: "📊" },
+  { name: "GCP", icon: "☁️" },
+  { name: "Git", icon: "📦" },
+  { name: "JavaScript", icon: "📘" },
+  { name: "Java", icon: "☕" },
+];
+
+const certifications = [
+  "PCEP - Certified Entry-Level Python Programmer",
+  "Google IT Automation With Python",
+  "Google Data Analytics Professional",
+  "Oracle Cloud Infrastructure 2025 AI Foundations",
 ];
 
 const SkillsSection = () => {
@@ -35,7 +42,7 @@ const SkillsSection = () => {
           {/* Center logo */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
             <div className="w-24 h-24 md:w-32 md:h-32 rounded-full bg-gradient-primary flex items-center justify-center glow-effect animate-glow-pulse">
-              <span className="font-handwriting text-3xl md:text-4xl text-primary-foreground">S</span>
+              <span className="font-handwriting text-3xl md:text-4xl text-primary-foreground">T</span>
             </div>
           </div>
 
@@ -79,7 +86,7 @@ const SkillsSection = () => {
 
         {/* Skills text list */}
         <div className="mt-12 flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
-          {["Microservices", "Spring Boot", "Nest.js", "FastAPI", "Keycloak", "Kafka", "React", "Next.js", "Redux", "Tailwind CSS", "MySQL", "MongoDB", "Docker", "Kubernetes", "AWS", "Langchain", "RAG", "GenAI"].map((skill) => (
+          {["Python", "Flask", "FastAPI", "Django", "React", "MySQL", "BigQuery", "MongoDB", "JavaScript", "Java", "R", "NumPy", "Pandas", "Git", "GCP", "Power BI", "Tableau", "Linux"].map((skill) => (
             <span
               key={skill}
               className="px-3 py-1.5 text-sm rounded-full border border-border/50 text-muted-foreground hover:border-primary hover:text-primary transition-all cursor-default"
@@ -87,6 +94,26 @@ const SkillsSection = () => {
               {skill}
             </span>
           ))}
+        </div>
+
+        {/* Certifications */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            <span className="text-gradient">Certifications</span>
+          </h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="p-4 bg-card/30 backdrop-blur-sm rounded-xl border border-border hover:border-primary/50 transition-all text-center"
+              >
+                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-primary text-lg">✓</span>
+                </div>
+                <p className="text-sm text-muted-foreground">{cert}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
