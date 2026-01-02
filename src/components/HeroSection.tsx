@@ -22,8 +22,8 @@ const HeroSection = () => {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse-slow" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/15 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: "2s" }} />
       
-      <div className="container mx-auto px-6 relative z-10 flex-1 flex items-center">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 w-full">
+      <div className="container mx-auto px-6 relative z-10 flex-1 flex items-center max-w-6xl">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full">
           {/* Avatar Section */}
           <div className="relative animate-float flex-shrink-0">
             <div className="w-48 h-48 md:w-56 md:h-56 relative">
