@@ -2,36 +2,20 @@ import { ExternalLink } from "lucide-react";
 
 const experiences = [
   {
-    title: "LOLC iPay Re-Architecture",
-    company: "Acentura Inc",
-    period: "Jan 2024 – Present",
-    description: "Built end-to-end payment cancelation logic, redesigned event-driven payment reference engine handling 1.8M+ monthly transactions from 45,000+ merchants.",
-    tech: ["Java", "Spring Boot", "Kafka", "Docker", "MySQL"],
-    icon: "💳",
+    title: "Junior Software Engineer",
+    company: "Hashnate",
+    period: "Sep 2024 – Present",
+    description: "Designed and developed LMS using Python and Django. Built ERP and CRM modules with Flask and MySQL. Implemented RESTful APIs with OAuth 2.0 and payment gateway integrations. Optimized MySQL queries reducing data retrieval time by 30%.",
+    tech: ["Python", "Django", "Flask", "MySQL", "OAuth 2.0", "REST APIs"],
+    icon: "💻",
   },
   {
-    title: "AssureOne QC Automation",
-    company: "Acentura Inc",
-    period: "2024",
-    description: "Implemented backend data validation pipelines ensuring data integrity between SAP exports and MongoDB, enhanced productivity with real-time data sync.",
-    tech: ["TypeScript", "React", "Next.js", "MongoDB"],
-    icon: "✅",
-  },
-  {
-    title: "Cell-Ed Platform",
-    company: "Acentura Inc",
-    period: "Jun 2023 – Dec 2023",
-    description: "Improved performance by 20% transitioning Forest Admin backend to RESTful API. Deployed AWS Lambda microservices achieving 40% cost reduction.",
-    tech: ["Node.js", "Nest.js", "AWS Lambda", "Docker"],
-    icon: "📱",
-  },
-  {
-    title: "TheCareerly AI System",
-    company: "Personal Project",
-    period: "Sep 2025 – Present",
-    description: "Architected Keycloak-integrated RBAC solution with custom API Gateway. Built RAG-based candidate screening processing 100 applications/hour.",
-    tech: ["Nest.js", "Next.js", "Langchain", "Keycloak"],
-    icon: "🤖",
+    title: "IT Lecturer",
+    company: "International European Campus",
+    period: "Feb 2022 – Feb 2024",
+    description: "Delivered lectures on Python, Java, and SQL, mentoring students on programming concepts and real-world applications. Designed and supervised web development projects using HTML, CSS, and JavaScript.",
+    tech: ["Python", "Java", "SQL", "HTML", "CSS", "JavaScript"],
+    icon: "📚",
   },
 ];
 

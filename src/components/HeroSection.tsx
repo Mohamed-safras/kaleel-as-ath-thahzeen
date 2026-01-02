@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { ArrowDown } from "lucide-react";
+import profileImage from "@/assets/profile.jpeg";
 
 const HeroSection = () => {
-  const roles = ["Software Engineer", "AI Enthusiast", "Full Stack Developer"];
+  const roles = ["Python Developer", "Backend Engineer", "Data Enthusiast"];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
@@ -29,25 +30,26 @@ const HeroSection = () => {
               {/* Glow behind avatar */}
               <div className="absolute inset-0 bg-gradient-radial from-primary/40 via-primary/10 to-transparent rounded-full blur-2xl scale-125" />
               
-              {/* Avatar placeholder - styled laptop emoji */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                <div className="text-8xl md:text-9xl">👨‍💻</div>
+              {/* Profile Image */}
+              <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl shadow-primary/20">
+                <img 
+                  src={profileImage} 
+                  alt="Kaleel As-Ath Thahzeen" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             
-            {/* Decorative arrow */}
-            <div className="absolute -top-4 right-0 text-muted-foreground">
-              <svg width="60" height="40" viewBox="0 0 60 40" fill="none" className="opacity-50">
-                <path d="M5 35C15 25 35 15 55 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 4"/>
-                <path d="M50 3L55 5L53 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
+            {/* Decorative badge */}
+            <div className="absolute -bottom-2 -right-2 px-4 py-2 bg-card/80 backdrop-blur-sm rounded-full border border-border animate-float" style={{ animationDelay: '1s' }}>
+              <span className="text-sm font-mono text-primary">PCEP Certified ✓</span>
             </div>
           </div>
 
           {/* Text Content */}
           <div className="text-center lg:text-left max-w-2xl">
             <p className="text-sm md:text-base font-medium mb-2">
-              Hello! I Am <span className="text-gradient">Mohamed Safras</span>
+              Hello! I Am <span className="text-gradient">Kaleel As-Ath Thahzeen</span>
             </p>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
@@ -73,15 +75,15 @@ const HeroSection = () => {
                 </span>
               </h2>
               <p className="text-muted-foreground text-sm md:text-base">
-                Currently, I'm a Software Engineer at{" "}
-                <span className="text-primary font-medium">Acentura Inc</span>
+                Currently, a Junior Software Engineer at{" "}
+                <span className="text-primary font-medium">Hashnate</span>
               </p>
             </div>
 
             <p className="text-muted-foreground leading-relaxed text-sm md:text-base max-w-xl">
-              A Software Engineer with 3 years of hands-on experience building and maintaining 
-              high-volume microservices for platforms processing millions of transactions. 
-              Focused on integrating cutting-edge AI technologies into scalable, high-performing systems.
+              PCEP Certified Python Developer with expertise in Flask, FastAPI & Django. 
+              Building efficient backend systems and data-driven solutions with strong 
+              database skills in MySQL & BigQuery.
             </p>
           </div>
         </div>

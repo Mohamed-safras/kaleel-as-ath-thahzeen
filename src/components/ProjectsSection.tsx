@@ -2,21 +2,21 @@ import { Globe } from "lucide-react";
 
 const projects = [
   {
-    title: "TheCareerly – AI Agent-Driven Recruitment",
-    description: "Architected a multi-layered Keycloak-integrated RBAC authentication solution with custom API Gateway. Built high-performance candidate screening using proprietary RAG architecture, achieving 100 applications/hour throughput with low latency. Automated job post creation and personalized communications using Generative AI.",
-    tech: ["Nest.js", "Next.js", "Ollama", "RAG", "Langchain", "Keycloak", "Kafka"],
+    title: "Learning Management System",
+    description: "A comprehensive LMS built with Python and Django to deliver online courses and manage student data efficiently. Features include course management, student tracking, and progress analytics.",
+    tech: ["Python", "Django", "MySQL", "REST API"],
     featured: true,
   },
   {
-    title: "Deepseek Local Chatbot",
-    description: "Integrated deepseek-r1:7b parameter model using Ollama for local LLM execution. Developed robust prompt chaining method to serialize chat prompts, managing conversation context and cutting average response time by 800ms.",
-    tech: ["Python", "Langchain", "Qdrant Vector DB"],
+    title: "ERP & CRM Modules",
+    description: "Enterprise resource planning and customer relationship management modules using Python, Flask, and MySQL. Streamlined financial and operational workflows with OAuth 2.0 authentication and payment gateway integrations.",
+    tech: ["Python", "Flask", "MySQL", "OAuth 2.0"],
     featured: true,
   },
   {
-    title: "Tea Leaf Disease Prediction",
-    description: "Drove data enhancement by processing 25K raw tea leaf images with specialized augmentation techniques. Compared CNN architectures (VGG, ResNet) achieving 95% accuracy with minimal computational overhead for field deployment.",
-    tech: ["Python", "FastAPI", "TensorFlow", "Pandas", "NumPy"],
+    title: "Database Performance Optimization",
+    description: "Improved database performance by optimizing MySQL queries, achieving a 30% reduction in data retrieval time for enterprise applications. Implemented efficient indexing and query optimization strategies.",
+    tech: ["MySQL", "Query Optimization", "Performance Tuning"],
     featured: false,
   },
 ];
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
                   <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
                   <div className="w-full h-full flex items-center justify-center">
                     <div className="text-6xl opacity-50">
-                      {index === 0 ? "🤖" : index === 1 ? "💬" : "🌿"}
+                      {index === 0 ? "📚" : index === 1 ? "💼" : "⚡"}
                     </div>
                   </div>
                 </div>

@@ -32,7 +32,7 @@ const Navbar = () => {
           href="#home"
           className="font-handwriting text-3xl text-foreground hover:text-primary transition-colors"
         >
-          Safras
+          Thahzeen
         </a>
         
         <div className="hidden md:flex items-center gap-8">
